@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+/*Navigation bar*/
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: red;
+  color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.nav-logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-link {
+  margin: 0 4px;
+}
+
+.nav-link-button {
+  padding: 8px 12px;
+  border-radius: 9999px;
+  border: none;
+  color: red;
+  font-size: 16px;
+  background-color: antiquewhite;
+  font-weight: 700;
+}
+/* Header*/
+#home {
+  height: 50vh;
+  color: antiquewhite;
+  background-image: url("../food image/header-image.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 60px;
+}
+
+.home-paragraph {
+  max-width: 400px;
+}
+
+.home-button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: antiquewhite;
+  border-radius: 9999px;
+  border: none;
+  width: 700;
+}
+/* About Us*/
+#about {
+  padding: 40px 16px;
+  display: flex;
+  gap: 20px;
+}
+
+.about-image {
+  width: 40%;
+  border-radius: 4px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-title {
+  font-size: 20px;
+}
+
+.about-button {
+  width: 120px;
+  padding: 12 0;
+  background-color: red;
+  border-radius: 9999px;
+  border: none;
+  color: antiquewhite;
+  font-weight: 700;
+}
+/*Menu*/
+#menu {
+  padding: 40px 16px;
+  gap: 20px;
+  display: flex;
+}
+
+.menu-image {
+  width: 40%;
+  border-radius: 4px;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-title {
+  font-size: 32px;
+}
+
+.menu-button {
+  border-radius: 9999px;
+  border: none;
+  font-weight: 700;
+  padding: 12 0;
+  background-color: red;
+  color: antiquewhite;
+  width: 120px;
+}
+/*Contact*/
+#contact {
+  padding: 40px 16px;
+  gap: 16px;
+}
+
+.contact-title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form-input,
+.contact-textarea {
+  outline: none;
+  border: 1px black solid;
+}
+
+.contact-form-input {
+  padding: 0 8px;
+  height: 32px;
+}
+
+.contact-textarea {
+  height: 128px;
+  resize: vertical;
+  padding: 8px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.contact-button {
+  background-color: red;
+  color: antiquewhite;
+  border-radius: 9999px;
+  border: none;
+  padding: 8px, 16px;
+  width: 120px;
+  transition: 200ms;
+  margin-top: 8px;
+}
+
+.contact-button :hover {
+  background-color: antiquewhite;
+  color: red;
+  border: 1px red solid;
+}
+/*Footer*/
+.footer {
+  height: 64px;
+  background-color: red;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-link {
+  font-weight: px;
+}
+
+@media (max-width: 768px) {
+  .about-title,
+  .menu-title .contact-title {
+    font-size: 24px;
+  }
+  .home-paragraph,
+  .about-paragraph {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link:not(:last-child) {
+    display: none;
+  }
+
+  #about,
+  #menu {
+    align-items: center;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  #menu {
+    flex-direction: column-reverse;
+  }
+
+  .about-wrapper,
+  .menu-wrapper {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image,
+  .menu-image {
+    width: 100%;
+  }
+}
